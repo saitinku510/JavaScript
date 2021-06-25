@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fnStoreData(){
+
+        sessionStorage.setItem('name','sai')
+        sessionStorage.setItem('city','Hyd')
+    }
+    function fnGetData(){
+        var name = sessionStorage.getItem('name')
+        var city = sessionStorage.getItem('city')
+        console.log(name)
+        console.log(city)
+    }
+    function fnUpdate(){
+        sessionStorage.setItem('name','sagar')
+    }
+    function fnClearData(){
+        sessionStorage.clear()
+    }
+</script>
+<body>
+    <button onclick="fnStoreData()">Store Data</button>
+    <button onabort="fnGetData()">Get Data</button>
+    <button onabort="fnUpdata()">Updata Data</button>
+    <button onabort="fnClearData()">Clear</button>
+    
+</body>
+</html>

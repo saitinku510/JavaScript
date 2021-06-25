@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW/HIDE PASSWORD</title>
+</head>
+<script>
+    function fnShowHide(){
+         var passRef = document.getElementById('password')
+
+            passRef.setAttribute('type', 'text')
+
+          var buttonRef = document.getElementById('btn')
+
+            buttonRef.setAttribute('button','Hide')
+        // //var attributeValue = passRef.getAttribute('type')
+        // // console.log(attributeValue)
+
+        // passRef.setAttribute('placeholder', 'Enter Text')
+
+        // console.log(passRef.getAttribute('placeholder'))
+
+    }
+</script>
+<body>
+    <div style="text-align: center; margin-top: 100px;">
+        <h2>Show/Hide Password</h2>
+        
+        <input type="password" placeholder="enter password" id="password"/>
+        <button onclick="fnShowHide()" id="btn">Show Password</button>
+</div>
+</body>
+</html>

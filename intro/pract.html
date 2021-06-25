@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function printDocument(){
+            var inputTextRef=   document.getElementById("textInput")
+            var inputPassRef=   document.getElementById('passInput')
+            var h2Reference = document.getElementById('h2Ref')
+
+            var textInputValue= inputTextRef.value
+            var passInputValue = inputPassRef.value
+               h2Reference.innerText = "Form Submitted"
+
+            
+         
+               var info = {
+                   name:textInputValue,
+                   password:passInputValue,
+               }
+               console.log(info)
+        }
+    </script>
+</head>
+<body>
+
+    <div style="text-align: center; margin-top: 100px;">
+        <h2 id="h2Ref">Login</h2>
+        <div>
+            <input type="text" placeholder="user name" id="textInput"/>
+        </div><br>
+        <div>
+            <input type="password" placeholder="password" id="passInput"/>
+        </div><br>
+        <div>
+            <input type="button" value="Login" onclick="printDocument()"/>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+</html>
+
+<!--
+    login form using html & css
+    h2, 4text boxes name,pass,email,phone no.,city,button login
+    have to take all the values from text box
+    dynamically create object
+    and print object
+    values should be cleared after login
+-->
+
+<!-- for thursday
+    create a list in ul li in dynamically
+    4 li's
+    multiple everytime should be changed
+-->
+
+<!--
+    rjstrainera2n@gmail.com
+-->

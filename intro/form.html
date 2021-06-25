@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+    <title>Document</title>
+    <script>
+        function printDocument(){
+            var inputTextRef = document.getElementById('textInput')
+            var inputPassRef = document.getElementById('passInput')
+            var inputMailRef = document.getElementById('mailInput')
+            var inputNumRef = document.getElementById('numInput')
+            var h2Reference = document.getElementById('h2Ref')
+
+            var textInputValue = inputTextRef.value
+            var passInputValue = inputPassRef.value
+            var mailInputValue = inputMailRef.value
+            var numInputValue = inputNumRef.value
+                h2Reference.innerText = "Form Submitted"
+
+            inputTextRef.value= ''
+            inputPassRef.value = ''
+            inputMailRef.value = ''
+            inputNumRef.value = ''
+                
+
+            console.log(textInputValue)
+            console.log(passInputValue)
+            console.log(mailInputValue)
+            console.log(numInputValue)
+
+            var pRef = document.createElement('h1')
+            var text = document.createTextNode('This is your Login Page')
+
+                pRef.append(text)
+
+                    document.querySelector('div').appendChild(pRef)
+
+                
+        }
+        
+    </script>
+</head>
+<body>
+
+    <div class="form">
+        <h2 id="h2Ref">Form Details</h2>
+        <div class="form1">
+            <input type="text" placeholder="user name" id="textInput"/>
+
+        </div><br>
+
+        <div class="form1">
+            <input type="password" placeholder="password" id="passInput"/>
+        </div><br>
+        <div class="form1">
+            <input type="text" placeholder="email" id="mailInput"/>
+        </div><br>
+        <div class="form1">
+            <input type="number" placeholder="Number" id="numInput"/>
+        </div><br>
+        <button type="submit" class="btn-style" onclick="printDocument()">Login</button>
+        
+    </div>
+
+    
+    
+</body>
+</html>
